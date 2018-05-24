@@ -18,10 +18,12 @@ YouCompleteMe# ./install.py --clang-completer
 
 6.配置
 
+
 YouCompleteMe# cp third_party/ycmd/examples/.ycm_extra_conf.py ~/.vim/
 
 7.测试
 
+测试是否有自动补齐的功能
 
 8.vim# apt-get install ctags cscope
 
