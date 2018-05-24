@@ -7,9 +7,13 @@
 4.在vim中输入PluginInstall自动安装插件
 
 5.编译YouCompleteMe
+
 vim# apt-get install python-dev python3-dev python-pip cmake
+
 vim# pip install requests
+
 vim# cd ~/.vim/bundle/YouCompleteMe/
+
 YouCompleteMe# ./install.py --clang-completer
 
 6.配置
