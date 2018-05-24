@@ -17,6 +17,7 @@ vim# cd ~/.vim/bundle/YouCompleteMe/
 YouCompleteMe# ./install.py --clang-completer
 
 6.配置
+
 YouCompleteMe# cp third_party/ycmd/examples/.ycm_extra_conf.py ~/.vim/
 
 7.测试
