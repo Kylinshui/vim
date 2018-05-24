@@ -32,14 +32,17 @@ let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
 set guifont=Monospace\ 14
 
- set nu!             " 显示行号
+set nu!             " 显示行号
+set ts=4  " set tab is 4 space
 
 syntax enable
 syntax on
 colorscheme desert
 
 :set autowrite   " 自动保存
-
+set autoindent "设置自动对齐(缩进)
+set shiftwidth=4 " (自动) 缩进使用的4个空格
+set cindent " 使用 C/C++ 语言的自动缩进方式"
 set foldmethod=syntax
 set foldlevel=100  " 启动vim时不要自动折叠代码
 "  折行
@@ -61,8 +64,8 @@ autocmd BufReadPost *.cpp,*.c,*.h,*.cc,*.cxx call tagbar#autoopen()
 
 " NetRedTree
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-let NERDTreeWinSize=15
+nmap <F10> :NERDTreeToggle<CR>
+let NERDTreeWinSize=20
 let NERDTreeShowLineNumbers=1
 "let NERDTreeAutoCenter=1
 let NERDTreeShowBookmarks=1
