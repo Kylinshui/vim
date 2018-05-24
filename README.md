@@ -21,6 +21,7 @@ YouCompleteMe# cp third_party/ycmd/examples/.ycm_extra_conf.py ~/.vim/
 8.vim# apt-get install ctags cscope
 
 9.使用make命令生成ctags和cscope
+
 linux-4.16.7# export ARCH=arm
 linux-4.16.7# export CROSS_COMPILE=arm-linux-gnueabi-
 linux-4.16.7# make vexpress_defconfig
